@@ -15,16 +15,16 @@ the goal of my project is to classify any image to these categories this will he
 To use the image detection, follow these steps:
 1. Clone the repository:
     ```bash
-    git clone https://github.com/youssefhosni/agentic-rag.git
+    git clone https://github.com/AshrafAlham/Nature-image-detection/tree/main
     ```
 2. Navigate to the project directory:
     ```bash
-    cd agentic-rag
+    cd main
     ```
 3. Run the main script:
     ```bash
-    python main.py
+    Qt5_cnn_project.py
     ```
 
 ## Contact
-For any questions or inquiries, please contact [your email](mailto:ashraf.alham96@gmail.com).
+For any questions or inquiries, please contact [ashraf.alham96@gmail.com](mailto:ashraf.alham96@gmail.com).
