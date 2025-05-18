@@ -1,30 +1,53 @@
-# Nature Image Detection
-
-## Overview
-the goal of my project is to classify any image to these categories this will help us to good recognition to the nature and use these models for any future tasks and you can use it on mutable classes like detection of place for someone and you can detect how he can live from the nature of his life, also I have another objective is to compare the results of multiple models like ( VGG16 – VGG19 – My customized model – Inception – ResNet) and get the best accuracy for each one and also use ensemble technique to get the best model prediction for each image to reduce the loss and error can happens.
+# Nature Image Classification using Deep Learning
 
 
+## 📌 Project Overview
+A deep learning approach to classify nature images into 6 categories:  
+**Sea | Mountain | Glacier | Forest | Street | Building**.  
+Compares performance of VGG16, VGG19, ResNet, InceptionV3, and a custom CNN model.
 
-## Features
-- **Intelligent Retrieval**: Efficiently retrieves relevant information from large datasets.
-- **Enhanced Generation**: Generates coherent and contextually appropriate responses.
-- **Agentic Capabilities**: Incorporates agent behaviors to improve interaction and decision-making.
+## 🎯 Key Features
+- **Multi-model comparison**: VGG16/VGG19, ResNet152V2, InceptionV3, Custom CNN
+- **Ensemble techniques** to boost accuracy
+- **Real-world applications**: Urban planning, tourism, climate research
+- Data augmentation (rotation, flipping, zooming, etc.)
 
+## 📊 Results Summary
+| Model          | Accuracy | F1-Score |
+|----------------|----------|----------|
+| Custom CNN     | 0.82     | 0.8164   |
+| VGG16          | 0.90     | 0.9010   |
+| VGG19          | 0.90     | 0.90     |
+| InceptionV3    | 0.90     | 0.90     |
+| ResNet152V2    | 0.89     | 0.8938   |
 
-## Usage
-To use the image detection, follow these steps:
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/AshrafAlham/Nature-image-detection/tree/main
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd main
-    ```
-3. Run the main script:
-    ```bash
-    Qt5_cnn_project.py
-    ```
+*(Confusion matrices available in [Technical Report](Technical%20report.pdf))*
 
-## Contact
-For any questions or inquiries, please contact [ashraf.alham96@gmail.com](mailto:ashraf.alham96@gmail.com).
+## 🛠️ Installation
+```bash
+git clone https://github.com/AshrafAlham/Nature-image-detection.git
+cd Nature-image-detection
+pip install -r requirements.txt
+
+🏗️ Project Structure
+Nature-image-detection/
+├── data/               # Dataset (not included in repo)
+├── models/             # Pretrained model weights
+├── notebooks/          # Jupyter notebooks for training/evaluation
+├── scripts/            # Utility scripts (preprocessing, etc.)
+├── results/            # Outputs (graphs, metrics)
+├── Technical report.pdf # Full project documentation
+└── README.md           # This file
+
+📂 Dataset
+Source: Kaggle
+
+Size: 18,000 images (14k train / 3k test / 1k prediction)
+
+Classes: Sea, Mountain, Glacier, Forest, Street, Building
+
+Augmentation: Rotation, scaling, flipping, brightness adjustment
+
+👨💻 Author: Ashraf Alham
+📅 Last Updated: 15 May 2025
+
